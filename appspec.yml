@@ -4,11 +4,7 @@ files:
   - source: /
     destination: /home/ec2-user/test-cloud
 hooks:
-  AfterInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
   ApplicationStart:
-    - location: scripts/start_crawler
+    - location: testfile.py
       timeout: 300
       runas: root
